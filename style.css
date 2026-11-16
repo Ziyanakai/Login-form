@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;                 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: url("background.png") center / cover no-repeat fixed;  
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 48px 40px;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);         
+  backdrop-filter: blur(14px);                    
+  -webkit-backdrop-filter: blur(14px);           
+  border: 1px solid rgba(255, 255, 255, 0.4);    
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.login-card h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.input-box {
+  position: relative;          
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px 46px 15px 56px;  
+  font-size: 15px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  outline: none;
+}
+
+.input-box input::placeholder {
+  color: #ffffff;               
+}
+
+.input-box input:focus {
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.input-box i {
+  position: absolute;
+  left: 20px;                    
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.input-box i.eye {
+  left: auto;                    
+  right: 18px;                   
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  accent-color: #6cc24a;
+}
+
+button {
+  display: block;              
+  width: 100%;                 
+  padding: 18px;               
+  font-size: 18px;             
+  font-weight: bold;
+  letter-spacing: 0.5px;       
+  color: #ffffff;
+  background: linear-gradient(90deg, #8fd16a, #2f9e5b);  
+  border: none;                
+  border-radius: 12px;         
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);  
+  transition: transform 0.15s, filter 0.15s;   
+}
+
+button:hover {
+  filter: brightness(1.1);     
+  transform: translateY(-2px); 
+}
+
+.register-link {
+  font-size: 15px;
+  margin-top: 26px;
+}
+
+.register-link a {
+  color: #9be37a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
